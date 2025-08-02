@@ -1,10 +1,10 @@
 # Jetson Nano字符识别系统 - 快速参考卡
 
-> 🚀 **这是一份快速参考指南，适合已经完成初始安装的用户**
+**这是一份快速参考指南，适合已经完成初始安装的用户**
 
-## 📋 常用命令速查
+## 常用命令速查
 
-### 🔧 系统管理
+### 系统管理
 ```bash
 # 检查系统状态
 python3 scripts/test_system.py
@@ -19,7 +19,7 @@ nvidia-smi
 sudo nvpmodel -m 0 && sudo jetson_clocks
 ```
 
-### 📊 数据生成
+### 数据生成
 ```bash
 # 生成完整数据集（每个字符100张图片）
 python3 data/tools/data_generator.py --output data/synthetic --count 100 --yolo --samples
@@ -31,7 +31,7 @@ python3 data/tools/data_generator.py --output data/synthetic --count 20 --yolo -
 ls data/synthetic/
 ```
 
-### 🎓 模型训练
+### 模型训练
 ```bash
 # 标准训练（推荐）
 python3 scripts/train_model.py --dataset synthetic --epochs 100 --batch-size 8
@@ -43,7 +43,7 @@ python3 scripts/train_model.py --dataset synthetic --epochs 20 --batch-size 4
 python3 scripts/train_model.py --dataset synthetic --epochs 50 --batch-size 2
 ```
 
-### 🚀 模型使用
+### 模型使用
 ```bash
 # 实时检测
 python3 scripts/run_detection.py models/custom/synthetic_trained.pt
@@ -57,7 +57,7 @@ python3 scripts/final_system_validation.py
 
 ---
 
-## 🎯 Python API 速查
+## Python API 速查
 
 ### 基本检测
 ```python
@@ -106,7 +106,7 @@ for image_path, detections in results.items():
 
 ---
 
-## ⚠️ 常见问题快速解决
+## 常见问题快速解决
 
 ### 问题：命令找不到
 ```bash
@@ -157,7 +157,7 @@ python3 scripts/train_model.py --dataset synthetic --epochs 200 --batch-size 8
 
 ---
 
-## 📁 重要文件位置
+## 重要文件位置
 
 ### 模型文件
 ```
@@ -190,7 +190,7 @@ scripts/test_system.py                 # 系统测试脚本
 
 ---
 
-## 🔍 性能监控
+## 性能监控
 
 ### 系统资源监控
 ```bash
@@ -239,7 +239,7 @@ print(f"检测到: {len(detections)} 个字符")
 
 ---
 
-## 🎨 自定义配置
+## 自定义配置
 
 ### 调整检测参数
 ```python
@@ -275,7 +275,7 @@ camera:
 
 ---
 
-## 📞 获取帮助
+## 获取帮助
 
 ### 查看日志
 ```bash
@@ -302,7 +302,7 @@ python3 -u scripts/run_detection.py models/custom/synthetic_trained.pt
 
 ---
 
-## 🏃‍♂️ 快速开始流程
+## 快速开始流程
 
 ### 新用户（5分钟快速测试）
 ```bash
@@ -336,4 +336,4 @@ python3 scripts/run_detection.py models/custom/synthetic_trained.pt
 
 ---
 
-**💡 提示：将此页面加入书签，方便随时查阅！**
+**提示：将此页面加入书签，方便随时查阅！**

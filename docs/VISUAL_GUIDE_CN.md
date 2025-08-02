@@ -1,8 +1,8 @@
 # 可视化操作指南 - Jetson Nano字符识别系统
 
-> 📸 **本指南提供重要操作步骤的可视化说明**
+**本指南提供重要操作步骤的可视化说明**
 
-## 🖥️ 终端界面说明
+## 终端界面说明
 
 ### 正确的终端界面
 当您打开终端时，应该看到类似这样的界面：
@@ -19,36 +19,36 @@ nvidia@jetson-nano:~$
 ### 项目目录结构
 ```
 /home/nvidia/projects/jetson-character-recognition/
-├── 📁 config/                    # 配置文件
-│   ├── 📄 model_config.yaml     # 模型配置
-│   └── 📄 camera_config.yaml    # 摄像头配置
-├── 📁 data/                      # 数据文件夹
-│   ├── 📁 synthetic/            # 生成的训练数据
-│   │   ├── 📁 0/               # 数字0的图片
-│   │   ├── 📁 1/               # 数字1的图片
-│   │   ├── 📁 A/               # 字母A的图片
-│   │   └── 📁 ...              # 其他字符
-│   └── 📁 samples/              # 样本图片
-├── 📁 docs/                      # 文档
-│   ├── 📄 BEGINNER_GUIDE_CN.md  # 初学者指南
-│   ├── 📄 QUICK_REFERENCE_CN.md # 快速参考
-│   └── 📄 TROUBLESHOOTING_CN.md # 故障排除
-├── 📁 models/                    # 模型文件
-│   └── 📁 custom/               # 自定义模型
-│       └── 📄 synthetic_trained.pt # 训练好的模型
-├── 📁 scripts/                   # 脚本文件
-│   ├── 📄 train_model.py        # 训练脚本
-│   ├── 📄 run_detection.py      # 检测脚本
-│   └── 📄 demo.py               # 演示脚本
-└── 📁 src/                       # 源代码
-    ├── 📁 models/               # 模型定义
-    ├── 📁 data/                 # 数据处理
-    └── 📁 inference/            # 推理代码
+├── config/                    # 配置文件
+│   ├── model_config.yaml     # 模型配置
+│   └── camera_config.yaml    # 摄像头配置
+├── data/                      # 数据文件夹
+│   ├── synthetic/            # 生成的训练数据
+│   │   ├── 0/               # 数字0的图片
+│   │   ├── 1/               # 数字1的图片
+│   │   ├── A/               # 字母A的图片
+│   │   └── ...              # 其他字符
+│   └── samples/              # 样本图片
+├── docs/                      # 文档
+│   ├── BEGINNER_GUIDE_CN.md  # 初学者指南
+│   ├── QUICK_REFERENCE_CN.md # 快速参考
+│   └── TROUBLESHOOTING_CN.md # 故障排除
+├── models/                    # 模型文件
+│   └── custom/               # 自定义模型
+│       └── synthetic_trained.pt # 训练好的模型
+├── scripts/                   # 脚本文件
+│   ├── train_model.py        # 训练脚本
+│   ├── run_detection.py      # 检测脚本
+│   └── demo.py               # 演示脚本
+└── src/                       # 源代码
+    ├── models/               # 模型定义
+    ├── data/                 # 数据处理
+    └── inference/            # 推理代码
 ```
 
 ---
 
-## 🎨 数据生成过程可视化
+## 数据生成过程可视化
 
 ### 第一步：运行数据生成命令
 ```bash
@@ -91,7 +91,7 @@ nvidia@jetson-nano:~/projects/jetson-character-recognition$ ls data/synthetic/
 
 ---
 
-## 🎓 模型训练过程可视化
+## 模型训练过程可视化
 
 ### 第一步：启动训练
 ```bash
@@ -142,7 +142,7 @@ Valid: Loss: 0.156 | Box: 0.089 | Cls: 0.045 | Obj: 0.022
 
 ### 第四步：训练完成信息
 ```
-🎉 训练完成！
+训练完成！
 
 最终结果:
   - 训练准确率: 94.2%
@@ -151,16 +151,16 @@ Valid: Loss: 0.156 | Box: 0.089 | Cls: 0.045 | Obj: 0.022
   - 训练时间: 3小时 45分钟 23秒
 
 模型文件保存位置:
-  ✓ 最佳模型: models/custom/synthetic_trained.pt
-  ✓ 最后模型: models/custom/last.pt
-  ✓ 训练日志: models/custom/training_logs/
+  - 最佳模型: models/custom/synthetic_trained.pt
+  - 最后模型: models/custom/last.pt
+  - 训练日志: models/custom/training_logs/
 
 下一步: 运行 python3 scripts/test_system.py 验证模型
 ```
 
 ---
 
-## 🚀 实时检测界面说明
+## 实时检测界面说明
 
 ### 第一步：启动实时检测
 ```bash
@@ -178,10 +178,10 @@ nvidia@jetson-nano:~/projects/jetson-character-recognition$ python3 scripts/run_
   - 模型: models/custom/synthetic_trained.pt
 
 正在初始化...
-✓ 模型加载完成
-✓ 摄像头初始化完成: USB Camera (640x480)
-✓ 性能监控启动
-✓ 实时检测已启动
+- 模型加载完成
+- 摄像头初始化完成: USB Camera (640x480)
+- 性能监控启动
+- 实时检测已启动
 
 控制说明:
   - 按 'q' 键退出
@@ -214,7 +214,7 @@ FPS: 15.5 | 处理时间: 64ms | 检测数: 3
 
 ---
 
-## 📊 性能监控界面
+## 性能监控界面
 
 ### GPU使用情况
 ```bash
@@ -256,7 +256,7 @@ nvidia@jetson-nano:~$ htop
 
 ---
 
-## 🔧 常见界面问题说明
+## 常见界面问题说明
 
 ### 问题1：终端显示权限错误
 ```bash
@@ -286,7 +286,7 @@ Epoch 1/100:   0%|          | 1/450 [05:23<40:15:32, 322.45s/it]
 
 ---
 
-## 📱 移动端查看建议
+## 移动端查看建议
 
 如果您需要在手机或平板上查看这些文档：
 
@@ -296,28 +296,28 @@ Epoch 1/100:   0%|          | 1/450 [05:23<40:15:32, 322.45s/it]
 
 ---
 
-## 🎯 成功标志总结
+## 成功标志总结
 
-### ✅ 数据生成成功
+### 数据生成成功
 - 看到 `data/synthetic/` 目录包含36个字符文件夹
 - 每个文件夹包含指定数量的图片文件
 - 生成过程无错误信息
 
-### ✅ 模型训练成功
+### 模型训练成功
 - 训练准确率逐渐提升到90%以上
 - 验证损失不再下降
 - 生成 `synthetic_trained.pt` 模型文件
 
-### ✅ 实时检测成功
+### 实时检测成功
 - 摄像头窗口正常显示
 - 能够识别字符并显示绿色框
 - FPS保持在10以上
 
-### ✅ 系统整体成功
+### 系统整体成功
 - 所有测试脚本运行无错误
 - 性能监控显示正常资源使用
 - 能够处理各种输入图片
 
 ---
 
-**💡 提示：保存这个页面作为参考，在操作过程中随时对照检查！**
+**提示：保存这个页面作为参考，在操作过程中随时对照检查！**
