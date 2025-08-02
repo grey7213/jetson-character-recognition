@@ -1,5 +1,9 @@
 # 部署指南
 
+**Language / 语言**: [English](DEPLOYMENT_GUIDE.md) | [中文](DEPLOYMENT_GUIDE_CN.md)
+
+---
+
 ## 概述
 
 本指南涵盖在NVIDIA Jetson Nano硬件上部署Jetson字符识别系统用于生产环境的完整流程。

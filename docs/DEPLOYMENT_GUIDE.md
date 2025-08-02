@@ -1,5 +1,9 @@
 # Deployment Guide
 
+**Language / 语言**: [English](DEPLOYMENT_GUIDE.md) | [中文](DEPLOYMENT_GUIDE_CN.md)
+
+---
+
 ## Overview
 This guide covers deploying the Jetson Character Recognition system on NVIDIA Jetson Nano hardware for production use.
 

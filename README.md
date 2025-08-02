@@ -1,5 +1,9 @@
 # Jetson Nano Character Recognition System
 
+**Language / 语言**: [English](README.md) | [中文](docs/README_CN.md)
+
+---
+
 ## Project Overview
 A computer vision system for autonomous boat navigation that detects and recognizes alphanumeric characters (0-9, A-Z) from camera input, optimized for Jetson Nano hardware.
 
@@ -39,6 +43,8 @@ jetson_character_recognition/
 
 ## Quick Start
 
+> 🇨🇳 **中文用户**: 请查看 [中文说明文档](docs/README_CN.md) 获取详细的中文安装和使用指南
+
 ### Installation
 ```bash
 # Clone the repository
@@ -76,9 +82,16 @@ python scripts/test_system.py
 - **Power Consumption**: <10W
 
 ## Documentation
+
+### 📚 English Documentation
 - [Deployment Guide](docs/DEPLOYMENT_GUIDE.md) - Complete deployment instructions
 - [API Documentation](docs/API.md) - Code API reference
 - [Performance Tuning](docs/PERFORMANCE.md) - Optimization guidelines
+
+### 📚 中文文档 (Chinese Documentation)
+- [中文说明文档](docs/README_CN.md) - 完整的中文项目说明
+- [中文部署指南](docs/DEPLOYMENT_GUIDE_CN.md) - 详细的部署和安装指南
+- [中文使用示例](examples/chinese_usage_examples.py) - 中文代码使用示例
 
 ## Examples
 

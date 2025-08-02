@@ -1,5 +1,9 @@
 # Jetson Nano字符识别系统
 
+**Language / 语言**: [English](../README.md) | [中文](README_CN.md)
+
+---
+
 ## 项目概述
 
 这是一个专为NVIDIA Jetson Nano硬件优化的计算机视觉系统，用于自主船舶导航中的字母数字字符检测和识别（0-9，A-Z）。该系统基于YOLOv8架构，提供实时字符检测能力。

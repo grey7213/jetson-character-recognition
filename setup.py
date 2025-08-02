@@ -19,12 +19,12 @@ if requirements_path.exists():
 setup(
     name="jetson-character-recognition",
     version="1.0.0",
-    author="Jetson Character Recognition Team",
-    author_email="support@example.com",
-    description="Computer vision system for character recognition on Jetson Nano",
+    author="grey7213",
+    author_email="grey7213@users.noreply.github.com",
+    description="Real-time character recognition system optimized for NVIDIA Jetson Nano",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/example/jetson-character-recognition",
+    url="https://github.com/grey7213/jetson-character-recognition",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
