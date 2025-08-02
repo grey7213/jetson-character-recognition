@@ -8,6 +8,24 @@
 
 这是一个专为NVIDIA Jetson Nano硬件优化的计算机视觉系统，用于自主船舶导航中的字母数字字符检测和识别（0-9，A-Z）。该系统基于YOLOv8架构，提供实时字符检测能力。
 
+## 📖 文档导航
+
+### 🎓 学习资源（推荐阅读顺序）
+1. **[完全初学者指南](BEGINNER_GUIDE_CN.md)** - 🌟 **零基础用户必读**，详细的步骤教程
+2. **[快速参考卡片](QUICK_REFERENCE_CN.md)** - 常用命令和API速查表
+3. **[故障排除指南](TROUBLESHOOTING_CN.md)** - 常见问题的详细解决方案
+
+### 📚 技术文档
+- [English README](../README.md) - 英文说明文档
+- [部署指南](DEPLOYMENT_GUIDE_CN.md) - 详细的安装和部署说明
+- [API文档](API.md) - 代码接口说明
+- [性能调优](PERFORMANCE.md) - 性能优化指南
+
+### 💡 使用建议
+- **🆕 新手用户**：建议从[完全初学者指南](BEGINNER_GUIDE_CN.md)开始，按步骤操作
+- **⚡ 有经验用户**：可以直接查看[快速参考卡片](QUICK_REFERENCE_CN.md)进行快速配置
+- **🔧 遇到问题时**：查阅[故障排除指南](TROUBLESHOOTING_CN.md)寻找解决方案
+
 ## 主要特性
 
 - **实时字符检测和识别** - 支持摄像头输入的实时处理

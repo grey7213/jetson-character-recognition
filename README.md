@@ -91,6 +91,9 @@ python scripts/test_system.py
 ### 📚 中文文档 (Chinese Documentation)
 - [中文说明文档](docs/README_CN.md) - 完整的中文项目说明
 - [中文部署指南](docs/DEPLOYMENT_GUIDE_CN.md) - 详细的部署和安装指南
+- [完全初学者指南](docs/BEGINNER_GUIDE_CN.md) - 零基础用户的详细教程
+- [快速参考卡片](docs/QUICK_REFERENCE_CN.md) - 常用命令和API速查
+- [故障排除指南](docs/TROUBLESHOOTING_CN.md) - 常见问题解决方案
 - [中文使用示例](examples/chinese_usage_examples.py) - 中文代码使用示例
 
 ## Examples
