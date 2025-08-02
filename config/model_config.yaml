@@ -1,0 +1,48 @@
+# Model Configuration for Jetson Nano Character Recognition
+
+# Model Architecture
+model:
+  name: "yolov8n"  # YOLOv8 Nano for Jetson Nano efficiency
+  input_size: [640, 640]  # Input image size [width, height]
+  num_classes: 36  # 10 digits + 26 letters
+  confidence_threshold: 0.5
+  nms_threshold: 0.4
+
+# Class mapping (0-9, A-Z)
+classes:
+  digits: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  letters: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+           'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+# Training parameters
+training:
+  epochs: 100
+  batch_size: 16  # Reduced for Jetson Nano memory constraints
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  momentum: 0.9
+  warmup_epochs: 3
+  
+# Data augmentation
+augmentation:
+  enabled: true
+  rotation: 15  # degrees
+  scale: [0.8, 1.2]
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.2
+  hue: 0.1
+  noise: 0.1
+
+# Jetson Nano optimization
+jetson:
+  use_tensorrt: true
+  fp16: true  # Half precision for speed
+  max_workspace_size: 1073741824  # 1GB
+  max_batch_size: 1
+  
+# Post-processing
+postprocess:
+  min_box_area: 100  # Minimum bounding box area
+  max_detections: 50  # Maximum detections per image
+  merge_threshold: 0.3  # Threshold for merging overlapping detections

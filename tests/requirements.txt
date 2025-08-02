@@ -1,0 +1,49 @@
+# Test dependencies for Jetson Character Recognition
+# Jetson字符识别测试依赖
+
+# Core testing framework / 核心测试框架
+pytest>=6.0.0
+pytest-cov>=2.12.0
+pytest-mock>=3.6.0
+pytest-xdist>=2.3.0
+
+# Performance testing / 性能测试
+pytest-benchmark>=3.4.0
+pytest-timeout>=1.4.0
+
+# Test utilities / 测试工具
+pytest-html>=3.1.0
+pytest-json-report>=1.4.0
+pytest-sugar>=0.9.4
+
+# Mocking and fixtures / 模拟和固件
+responses>=0.18.0
+factory-boy>=3.2.0
+faker>=13.0.0
+
+# Image processing for tests / 测试用图像处理
+opencv-python>=4.5.0
+Pillow>=8.0.0
+numpy>=1.19.0
+
+# Data handling / 数据处理
+pandas>=1.3.0
+matplotlib>=3.3.0
+
+# Memory profiling / 内存分析
+memory-profiler>=0.60.0
+psutil>=5.8.0
+
+# Code quality / 代码质量
+flake8>=3.9.0
+black>=21.0.0
+isort>=5.9.0
+
+# Documentation testing / 文档测试
+doctest>=2.7.0
+
+# Async testing / 异步测试
+pytest-asyncio>=0.18.0
+
+# GPU testing (optional) / GPU测试（可选）
+# pytest-gpu>=0.1.0  # Uncomment if available

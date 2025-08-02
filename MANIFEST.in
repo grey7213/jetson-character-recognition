@@ -1,0 +1,49 @@
+# Include documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include docs *.md *.rst *.txt
+
+# Include configuration files
+recursive-include config *.yaml *.yml *.json
+
+# Include scripts
+recursive-include scripts *.py *.sh
+
+# Include test files
+recursive-include tests *.py *.yaml *.json
+
+# Include examples
+recursive-include examples *.py *.md
+
+# Include data tools and samples (but not large datasets)
+recursive-include data/tools *.py
+recursive-include data/samples *.py *.md
+include data/README.md
+
+# Include model metadata (but not actual model files)
+include models/README.md
+include models/model_info.yaml
+
+# Exclude compiled files and caches
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .git*
+global-exclude .DS_Store
+
+# Exclude large model files
+global-exclude *.pt
+global-exclude *.pth
+global-exclude *.onnx
+global-exclude *.engine
+global-exclude *.trt
+
+# Exclude datasets and temporary files
+global-exclude data/datasets/*
+global-exclude data/temp/*
+global-exclude data/cache/*
+global-exclude temp_*
+global-exclude *.tmp
+global-exclude *.log
